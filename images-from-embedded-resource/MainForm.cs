@@ -61,10 +61,10 @@ namespace images_from_embedded_resource
                 {
                     _index = value;
                     pictureBox.BackgroundImage = $"images_from_embedded_resource.Images.sample-image-{Index.ToString("D5")}.png".FromNamedResource();
+                    Text = $"{Index.ToString("D5")}";
                 }
             }
         }
-
     }
     static class Extensions
     {
